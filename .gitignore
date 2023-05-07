@@ -1,0 +1,16 @@
+.vscode
+input1
+input2
+server
+client
+server.DSYM
+client.DSYM
+*/.DS_Store
+.DS_Store
+*.mp4
+*.iso
+output/*
+# results/*
+append.cpp
+*.jpg
+.DS_Store
