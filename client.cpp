@@ -238,7 +238,7 @@ vector<sockaddr_in> readVector(int sock)
 
 void recieve_section(sockaddr_in address, map<int, Buffet> &sections, float parts, string filename, int pos, int client_size)
 {
-    mtx.lock();
+    //mtx.lock();
     int socket_id = socket(AF_INET, SOCK_STREAM, 0);
     if (connect(socket_id, (sockaddr *)&address, sizeof(address)) < 0)
     {
@@ -301,7 +301,7 @@ void recieve_section(sockaddr_in address, map<int, Buffet> &sections, float part
 
     delete[] buffer;
 
-    mtx.unlock();
+    //mtx.unlock();
 }
 
 int sendID(int socket_id, char *ID)
