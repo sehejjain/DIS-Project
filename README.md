@@ -29,9 +29,11 @@ so, always send the handshake first
 
 5) Don't download from the same client which was used to register the file. Download from a different client.
 
-Initiate multiple terminal sessions and register the same file from all of them to create a multiple peers with the same file.
+Initiate multiple terminal sessions and register the same file from all of them to create multiple peers ready to share with the same file.
 
-Then try downloading the file from a different client where we did not register the file.
+Then try downloading the file from a different client where we did not register the file. This way, we can take advantage of p2p system to download different pieces of the same file from different peers, all at the same time.
+
+The downloaded file is present in the output folder.
 
 **Always send the handshake first**
 
